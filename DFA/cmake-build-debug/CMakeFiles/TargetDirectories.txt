@@ -1,0 +1,3 @@
+C:/Users/Ciprian/lfa/cmake-build-debug/CMakeFiles/lfa.dir
+C:/Users/Ciprian/lfa/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Ciprian/lfa/cmake-build-debug/CMakeFiles/rebuild_cache.dir
