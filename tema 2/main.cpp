@@ -13,7 +13,7 @@ using namespace std;
 void citire(int afnl[100][10], int &init, int final[100], int &nr, int &cuv, int &finl)
 {
     char aux[100], auxi[100], lit;
-    int i, st, sti, auxf;
+    int i, st, sti, auxf, fi;
     ifstream  fin("C:\\Users\\Ciprian\\Documents\\GitHub\\lfa-lab\\tema 2\\ex2.txt");
     fin>>aux;
     init = aux[1] - '0' + 10;
@@ -77,8 +77,15 @@ void citire(int afnl[100][10], int &init, int final[100], int &nr, int &cuv, int
             {
                 if(auxf%100 == final[a])
                 {
-                    finl++;
-                    final[finl-1] = st+10;
+                    fi = 0;
+                    for(int i = 0; i<finl; i++)
+                        if(final[i] == st+10)
+                            fi++;
+                    if(fi == 0)
+                    {
+                        finl++;
+                        final[finl - 1] = st + 10;
+                    }
                 }
                 auxf = auxf/100;
             }
