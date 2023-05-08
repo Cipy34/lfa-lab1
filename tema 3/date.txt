@@ -1,0 +1,7 @@
+S -> aA | dE
+A -> aB | aS
+B -> bC
+C -> bD | bB
+D -> cD | ~
+E -> ~
+Stop
